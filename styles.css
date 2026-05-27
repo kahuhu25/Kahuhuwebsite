@@ -931,14 +931,14 @@ p { margin: 0 0 1em; color: var(--ink-2); }
 /* ---- SmartRunFarm logo ---- */
 .product-logo {
   display: block;
-  width: clamp(180px, 22vw, 280px);
+  width: clamp(140px, 16vw, 200px);
   height: auto;
   margin: 4px auto 18px;
   user-select: none;
 }
 .product-logo-sm {
-  width: clamp(120px, 14vw, 160px);
-  margin: 0 auto 18px;
+  width: clamp(80px, 10vw, 110px);
+  margin: 0 auto 14px;
 }
 
 /* ============================================================
