@@ -81,7 +81,7 @@ All content is in `index.html` — just edit the text. Common customizations:
 | Company name & tagline | `index.html` — `<title>`, hero `<h1>`, footer |
 | Colors / theme | `styles.css` — `:root` CSS variables at the top |
 | Services | `index.html` — the `<section id="services">` block |
-| Projects | `index.html` — the `<section id="projects">` block (current names are placeholders) |
+| Projects / portfolio demos | `index.html` — `#portfolio`; live KPI demo at `portfolio/kpi-dashboard/` |
 | Partner logos | `index.html` — `<ul class="logo-row">` (currently placeholder names) |
 | Contact email | `index.html` — search for `hello@futurebridgesolutions.com` |
 | Favicon | replace `assets/favicon.svg` |
