@@ -1,8 +1,9 @@
 # FutureBridge Solutions Limited — Website
 
-A professional, single-page business website for **FutureBridge Solutions Limited**, built with **plain HTML, CSS, and JavaScript**. No build step, no dependencies, no framework — just static files hosted on **GitHub Pages**.
+A professional, single-page business website for **FutureBridge Solutions Limited**, built with **plain HTML, CSS, and JavaScript**. No build step, dependencies, or framework required.
 
-**Live site:** https://kahuhu25.github.io/Kahuhuwebsite/
+- **Current site (until migration is complete):** https://kahuhu25.github.io/Kahuhuwebsite/
+- **Migration target:** https://futurebridgesolutionsltd.co.ke/
 **Repository:** https://github.com/kahuhu25/Kahuhuwebsite
 
 ## What's inside
@@ -50,7 +51,22 @@ Then open <http://localhost:8000>.
 
 ## Deployment
 
-This repo deploys automatically via **GitHub Actions** (see `.github/workflows/pages.yml`).
+### Move to HostAfrica
+
+This site is static, so it can be uploaded directly using the hosting control panel:
+
+1. In HostAfrica, open the hosting service for `futurebridgesolutionsltd.co.ke` and its File Manager.
+2. Back up any files currently in the domain's document root before replacing anything. The root is often `public_html`, but confirm the directory assigned to this domain in the panel.
+3. Upload the site files and folders, keeping their structure: `index.html`, `privacy.html`, `404.html`, `styles.css`, `script.js`, `robots.txt`, `assets/`, and `portfolio/`.
+4. Do not upload `.git/`, `.github/`, or this README. No build or install step is needed.
+5. Enable an SSL certificate for the domain in the hosting panel and confirm `https://futurebridgesolutionsltd.co.ke/` loads before sharing the new URL.
+6. Check the home page, privacy policy, assets, and portfolio page on the new domain.
+
+The GitHub Pages deployment below is left in place as a fallback until the HostAfrica site is confirmed working.
+
+### GitHub Pages fallback
+
+This repo also deploys automatically via **GitHub Actions** (see `.github/workflows/pages.yml`).
 
 ### First-time setup (one-time, in the GitHub UI)
 
@@ -81,7 +97,7 @@ All content is in `index.html` — just edit the text. Common customizations:
 | Company name & tagline | `index.html` — `<title>`, hero `<h1>`, footer |
 | Colors / theme | `styles.css` — `:root` CSS variables at the top |
 | Services | `index.html` — the `<section id="services">` block |
-| Projects / portfolio demos | `index.html` — `#portfolio`; live KPI demo at `portfolio/kpi-dashboard/` |
+| Projects / portfolio | `index.html` — `#portfolio` |
 | Partner logos | `index.html` — `<ul class="logo-row">` (currently placeholder names) |
 | Contact email | `index.html` — search for `hello@futurebridgesolutions.com` |
 | Favicon | replace `assets/favicon.svg` |
